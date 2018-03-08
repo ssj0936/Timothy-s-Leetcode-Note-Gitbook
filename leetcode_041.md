@@ -4,8 +4,7 @@
 
 ## 題目URL
 
-[https://leetcode.com/problems/first-missing-positive/description/](https://leetcode.com/problems/first-missing-positive/description/)  
-
+[https://leetcode.com/problems/first-missing-positive/description/](https://leetcode.com/problems/first-missing-positive/description/)
 
 ## 題目敘述
 
@@ -17,8 +16,6 @@ Given an unsorted integer array, find the first missing positive integer.
 
 Your algorithm should run in O\(n\) time and uses constant space.
 
-
-
 給一個為排序的整數陣列，找出其中缺失的最小正整數
 
 **注意:**時間複雜度需要O\(n\)內，且只能用常數的空間複雜度
@@ -28,8 +25,6 @@ Your algorithm should run in O\(n\) time and uses constant space.
 > \[1,2,0\] =&gt; 其中缺少的最小正整數為3
 >
 > \[3,4,-1,1\] =&gt;\[-1,1,3,4\] =&gt; 其中缺小的最小正整數是2
-
-
 
 ## 想法
 
@@ -44,8 +39,6 @@ Your algorithm should run in O\(n\) time and uses constant space.
 但這樣做sort一定不會低於O\(nlogn\)，空間複雜度也會變成O\(n\)
 
 你要嘛是看不懂字不然就是藐視王法，完全無視附加條件，除了拍手我想不到什麼方法讚揚你的勇氣
-
-
 
 接著想到可以用swap，所以有了第一版想法：
 
@@ -151,13 +144,9 @@ Your algorithm should run in O\(n\) time and uses constant space.
 > console.log(result);
 > ```
 
-
-
 做完覺得好棒給自己拍手，被拍手聲清空思緒之後，發現多此一舉...
 
 好像根本不必特別把負數獨立出來，所以有了第二版的解法：
-
-
 
 ## 第二版解法
 
@@ -240,7 +229,7 @@ console.log(result);
 >
 > pointer = 2 ，由於nums\[2\] == -2 != 2，但因為沒有nums\[-2\]所以不做swap，pointer向前
 
-↓ 
+↓
 
 > \[-1, 1, -2, 3, 4 ,0\]
 >
@@ -261,8 +250,4 @@ Status:Accepted
 Runtime:76ms
 
 Your runtime beats 100.00 % of javascript submissions.
-
-分數其實很低，判斷有沒有重複解的部分可以再改進，在其他地方看到有一個解是說：
-
-既然已經sort過，那在找到解之後，pointer\_2和pointer\_3可以繼續前進把重複解濾掉，那就不用set了
 

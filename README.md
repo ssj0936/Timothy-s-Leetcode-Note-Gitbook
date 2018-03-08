@@ -1,3 +1,3 @@
-# My Awesome Book
+# Timothy's Leetcode Note
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+打發時間，精進思考，記錄過程

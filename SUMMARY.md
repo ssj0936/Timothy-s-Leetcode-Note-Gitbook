@@ -1,4 +1,9 @@
 # Summary
 
-* [Leetcode 1 - Two Sum](/leetcode_001.md)
-* [Leetcode 15 - 3Sum](/leetcode_015.md)
+* [Leetcode 001 - Two Sum](/leetcode_001.md)
+* [Leetcode 008 - String to Integer \(atoi\)](/leetcode_008.md)
+* [Leetcode 015 - 3Sum](/leetcode_015.md)
+* [Leetcode 041 - First Missing Positive](/leetcode_041.md)
+
+
+

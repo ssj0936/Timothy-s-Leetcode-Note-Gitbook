@@ -82,28 +82,24 @@ if (head == null) return null;
 
 這解法不說原理根本不懂：
 
-
-
-假設linklist中，非cycle部分的長度為x，cycle部分長度為y，而cycle起點到兩pivot相遇的位置其距離為k，並兩個pivot跑了t回合之後相遇，所以：
-
-slowPivot走過的長度為：$$x+my+k$$
-
-fastPivot走過的長度為$$x+ny+k$$
-
-\(每個pivot都是先經過非cycle的部分+幾圈的cycle+剩下一點點的路程\)  
-slowPivot一次走兩格，slowPivot一次走一格，依照行走距離可得：
-
-$$2x+2my+2k = x+ny+k$$
-
-$$→ x+k = (n-2m)y$$
-
-
+> 假設linklist中，非cycle部分的長度為x，cycle部分長度為y，而cycle起點到兩pivot相遇的位置其距離為k，並兩個pivot跑了t回合之後相遇，所以：
+>
+> slowPivot走過的長度為：x+my+k
+>
+> fastPivot走過的長度為：x+ny+k
+>
+> \(每個pivot都是先經過非cycle的部分+幾圈的cycle+剩下一點點的路程\)  
+> slowPivot一次走兩格，slowPivot一次走一格，依照行走距離可得：
+>
+> 2x+2my+2k = x+ny+k
+>
+> → x+k = \(n-2m\)y
 
 挖O咧，從結論看起來：
 
 從兩Pivot相遇的位置\(k\)，再往前走x的距離，就會回到cycle的起點
 
-工作這幾年根本沒用過數學，這解法看起來根本奇技淫巧。
+工作這幾年根本沒用過數學，這解法看起來根本奇門遁甲。
 
 ## 結果
 

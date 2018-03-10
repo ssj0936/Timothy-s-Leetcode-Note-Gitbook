@@ -8,6 +8,7 @@
 * [Leetcode 142 - Linked List Cycle II](/leetcode_142.md)
 * [Leetcode 200 - Number of Islands](/leetcode_200.md)
 * [Leetcode 287 - Find the Duplicate Number](/leetcode_287.md)
+* [Leetcode 395 - Longest Substring with At Least K Repeating Characters](/leetcode_395.md)
 
 
 

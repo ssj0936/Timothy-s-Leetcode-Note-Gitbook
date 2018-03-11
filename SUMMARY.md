@@ -1,6 +1,7 @@
 # Summary
 
 * [Leetcode 001 - Two Sum](/leetcode_001.md)
+* [Leetcode 003 - Longest Substring Without Repeating Characters](/leetcode_003)
 * [Leetcode 008 - String to Integer \(atoi\)](/leetcode_008.md)
 * [Leetcode 015 - 3Sum](/leetcode_015.md)
 * [Leetcode 041 - First Missing Positive](/leetcode_041.md)
